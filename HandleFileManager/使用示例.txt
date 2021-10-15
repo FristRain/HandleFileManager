@@ -1,0 +1,11 @@
+正则替换
+
+模式RegReplace
+python2 dealfile.py -p F:\python\文件处理\delphi\正则匹配替换\Test -m RegReplace -o "(\+\d+\d+\+)\|,SHOWMESSAGEBOX,\1~~~~"
+(遍历F:\python\文件处理\delphi\正则匹配替换\Test下的所有pas文件，找到有SHOWMESSAGEBOX这一行，匹配到(\+\d+\d+\+)\|这个正则式的 进行\1~~~~操作)
+
+模式KJReplace
+python2 dealfile.py -p F:\python\文件处理\delphi\Test -m KJReplace -o "TAdvGlowButton,F:\python\文件处理\delphi\控件替换\mlskinButton.txt"
+(-p 路径 -m 模式 -o 其他参数 param1,param2 [param1:需要替换的控件 param2:新控件的dfm格式文件]
+
+python2 dealfile.py -p E:\KJr -m KJReplace -o "TMlSkinCornerButton,F:\python\文件处理\delphi\控件替换\advbutton.txt"
